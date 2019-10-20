@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# content-select-downloader  Copyright (C) 2019  Samuel Bachmann <samuel.bachmann@gmail.com>
+# This program comes with ABSOLUTELY NO WARRANTY.
+# This is free software, and you are welcome to redistribute it.
+
 import argparse
 import os
 import re
