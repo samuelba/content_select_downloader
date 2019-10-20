@@ -68,6 +68,22 @@ class ContentSelectDownloader:
             chapter_ids.append(chapter_id)
             print(chapter_id)
 
+        # Second try.
+        if not chapter_ids:
+            outline_items = soup.select("div.outlineItem a")
+            for item in outline_items:
+                href = item["href"]
+                result = re.search(r"#chapter=([a-z0-9]*)", href)
+                chapter_id = ''
+                if result:
+                    chapter_id = result.group(1)
+                chapter_ids.append(chapter_id)
+                print(chapter_id)
+
+        # Third try.
+        if not chapter_ids:
+            chapter_ids.append('')
+
         return chapter_ids
 
     @staticmethod
