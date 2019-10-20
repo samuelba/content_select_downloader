@@ -1,6 +1,6 @@
 # content-select Downloader
 
-This script can download PDFs from content select and merge them to one PDF.
+This script can download PDFs from https://content-select.com and merge them to one PDF.
 
 ```
 usage: download.py [-h] --url URL [--output OUTPUT]

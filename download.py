@@ -88,7 +88,7 @@ class ContentSelectDownloader:
     @staticmethod
     def merge_pdfs(files, output):
         print("Merge PDFs.")
-        merger = PdfFileMerger()
+        merger = PdfFileMerger(strict=False)
 
         for pdf in files:
             merger.append(pdf)
