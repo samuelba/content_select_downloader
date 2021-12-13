@@ -6,7 +6,7 @@ chardet==3.0.4
 cssselect==1.1.0
 fake-useragent==0.1.11
 idna==2.8
-lxml==4.6.3
+lxml==4.6.5
 parse==1.12.1
 pyee==6.0.0
 PyPDF2==1.26.0
